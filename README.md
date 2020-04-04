@@ -15,4 +15,6 @@
 - color by d3 min/max should be dynamic. In the main.js code.  
 **note:** *there are 2 main.js files - main.js for U.S. map and one for the counties*  
 - Each state index will be named by their abbriated names  
-**example:** ca_index.html (can copy ca_index.html for each state. Will need to replace svg code)
+**example:** ca_index.html (can copy ca_index.html for each state. Will need to replace svg code)  
+
+View deployment [here](https://shannon-goddard.github.io/COV19MAP/)
