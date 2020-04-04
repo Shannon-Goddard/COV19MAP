@@ -2,10 +2,12 @@
 **Create dashboard of U.S. Map**  
 - HTML maps
 - States colored by d3 min/max valued by "cases" (choropleth)  
-- U.S. map has drop-down select by day with filtered data shown   
+- U.S. map has drop-down select by day with filtered data shown  
+- U.S. map has hover-on state show data of selected day
 - On-click each state will take you to specified state by county (California is active for example)  
 - Counties colored by d3 min/max valued by "cases" (choropleth)  
 - Each state by county map has drop-down select by day with filtered data shown  
+- Each state has hover-on county show data of selected day
 - Each state by county map has back-button to U.S. map  
 
 **To-do list**  
