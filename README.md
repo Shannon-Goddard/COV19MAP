@@ -12,7 +12,7 @@
 
 **To-do list**  
 - States colored by d3 min/max valued by "cases" (choropleth)  
-- Get data (live feed would be perfered, however, found csv. [here](https://github.com/datasets/covid-19))  
+- Get data (live feed would be perfered, however, found csv. [here](https://github.com/datasets/covid-19)) and [here](https://github.com/nytimes/covid-19-data)  
 - ~~On-click for every state (on-click is href in index.html (see ca path as example))~~  
 - color by d3 min/max should be dynamic. In the main.js code.  
 **note:** *there are 2 main.js files - main.js for U.S. map and one for the counties*  
