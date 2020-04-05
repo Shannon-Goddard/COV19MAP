@@ -1,4 +1,4 @@
-$("path, polyline").hover(function(e) {
+$("path, polyline, polygon").hover(function(e) {
   // make tooltip visible
   $('#info-box').css('display','block');
   // get date from selector element
@@ -19,7 +19,7 @@ $("path, polyline").hover(function(e) {
   // change value of tooltip to html we just made
   $('#info-box').html(county_html);
 });
-$("path, polyline").mouseleave(function(e) {
+$("path, polyline, polygon").mouseleave(function(e) {
   $('#info-box').css('display','none');
 });
 $(document).mousemove(function(e) {
@@ -39,7 +39,3 @@ function getOption() {
   output = selectElement.value;
   document.querySelector('.output').textContent = output;
 }
-
-
-
-

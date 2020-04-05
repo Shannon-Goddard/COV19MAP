@@ -1,4 +1,4 @@
-#ca-map{
+#map{
   display: block;
   position: absolute;
   top: 250x;
@@ -6,12 +6,17 @@
   width: 65%;
   height: 65%;
 }
-path:hover, polyline:hover {
+path:hover,polyline:hover, polygon:hover, line:hover {
   stroke: #002868 !important;
   stroke-width:2px;
   stroke-linejoin: round;
   fill: #002868 !important;
   cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
 }
 #info-box {
   display: none;
@@ -24,10 +29,8 @@ path:hover, polyline:hover {
   border-radius: 5px;
   padding: 5px;
   font-family: arial;
-  text-transform: uppercase;
-}
-::first-line {
-  font-weight: bold;   
 }
 
-.attr('fill', d => colorScale(county.properties.cases.change)));
+.info_box::first-line {
+  font-weight: bold;   
+}
