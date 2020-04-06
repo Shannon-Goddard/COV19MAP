@@ -34,3 +34,10 @@ path:hover,polyline:hover, polygon:hover, line:hover {
 .info_box::first-line {
   font-weight: bold;   
 }
+
+path, polyline, polygon, line {
+  fill: #CCCCCC !important;
+  stroke: #FFFFFF !important;
+  stroke-miterlimit: 1 !important;
+
+}
