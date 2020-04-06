@@ -12,13 +12,12 @@
     - **note:** California is active for example of drop-down filter and hover
 
 **To-do list**  
-- States and counties colored by d3 min/max valued by "cases" (choropleth)
+- Counties colored by d3 min/max valued by "cases" (choropleth)
     - color by d3 min/max should be dynamic. In the main.js code.  
-**note:** *there are 2 main.js files - main.js for U.S. map and one for the counties*
+**note:** main.js is located in *static\counties\static\js\data.js*
 - Get data (live feed would be perfered, however, found csv. [here](https://github.com/datasets/covid-19) and [here](https://github.com/nytimes/covid-19-data))
-    - **note** current data is in counties js folder. only set up for California at this time. Have csv for all U.S. Counties to upload after color by d3 is completed. 
-- ~~On-click for each state~~  
-    - ~~Each state index will be named by their abbriated names~~  
+    - **note** current data is in *static\counties\static\js\data.js*. **Only set up for California at this time**. Have csv for all U.S. Counties to upload after color by d3 is completed. 
+
   
 
 View deployment [here](https://shannon-goddard.github.io/COV19MAP/)
