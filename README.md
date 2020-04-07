@@ -26,7 +26,7 @@
     
     ![](pics/console.png)  
     
-    # however, an error is printing that data is not a function on line 8 of main.js when a county is hovered on. I believe the problem is because it is csv, not json. Even though it is being printed on the console as objects. The main.js code would have to be reconfigured for csv... or figure out how to convert the csv to json. I was reading on jsonify and CSVToJSON. jsonify is more comprehesive to me. However, CSVToJSON code is a lot less. Requires dwonloading nodes(npm).  
+    #### however, an error is printing that data is not a function on line 8 of main.js when a county is hovered on. I believe the problem is because it is csv, not json. Even though it is being printed on the console as objects. The main.js code would have to be reconfigured for csv... or figure out how to convert the csv to json. I was reading on jsonify and CSVToJSON. jsonify is more comprehesive to me. However, CSVToJSON code is a lot less. Requires downloading nodes(npm).  
     
     This replacement for a data source in promising.Console.log(data) shows the data coming in as csv. However, there is a disconnect in the json conversion. Also, will have to tweak **main.js** code after this feed works. **Data will have to be filtered by 'state'** after it is filtered by 'date' and before it is filtered by 'county'.  
     
