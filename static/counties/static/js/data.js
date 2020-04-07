@@ -3,7 +3,7 @@ const data = [{
       date: "2020-01-21",
       id: "Alameda",
       state: "California",
-      cases: "",
+      cases: "0",
       deaths: ""
     },
     {
@@ -11,7 +11,7 @@ const data = [{
       date: "2020-01-21",
       id: "Alpine",
       state: "California",
-      cases: "",
+      cases: "10",
       deaths: ""
     },
     {
@@ -19,7 +19,7 @@ const data = [{
       date: "2020-01-21",
       id: "Amador",
       state: "California",
-      cases: "",
+      cases: "20",
       deaths: ""
     },
     {
@@ -27,7 +27,7 @@ const data = [{
       date: "2020-01-21",
       id: "Butte",
       state: "California",
-      cases: "",
+      cases: "100",
       deaths: ""
     },
     {
@@ -35,7 +35,7 @@ const data = [{
       date: "2020-01-21",
       id: "Calaveras",
       state: "California",
-      cases: "",
+      cases: "1000",
       deaths: ""
     },
     {
@@ -43,7 +43,7 @@ const data = [{
       date: "2020-01-21",
       id: "Colusa",
       state: "California",
-      cases: "",
+      cases: "500",
       deaths: ""
     },
     {
@@ -51,7 +51,7 @@ const data = [{
       date: "2020-01-21",
       id: "Contra Costa",
       state: "California",
-      cases: "",
+      cases: "5000",
       deaths: ""
     },
     {
@@ -59,7 +59,7 @@ const data = [{
       date: "2020-01-21",
       id: "Del Norte",
       state: "California",
-      cases: "",
+      cases: "3000",
       deaths: ""
     },
     {
@@ -67,7 +67,7 @@ const data = [{
       date: "2020-01-21",
       id: "El Dorado",
       state: "California",
-      cases: "",
+      cases: "2500",
       deaths: ""
     },
     {

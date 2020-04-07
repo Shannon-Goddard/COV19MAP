@@ -6,7 +6,7 @@
   width: 65%;
   height: 65%;
 }
-path:hover,polyline:hover, polygon:hover, line:hover {
+path:hover, polyline:hover, polygon:hover, line:hover {
   stroke: #002868 !important;
   stroke-width:2px;
   stroke-linejoin: round;
