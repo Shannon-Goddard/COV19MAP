@@ -18,6 +18,16 @@
 - Get data (live feed would be perfered, however, found csv. [here](https://github.com/datasets/covid-19) and [here](https://github.com/nytimes/covid-19-data))
     - **note** current data is in *static\counties\static\js\data.js*. **Only set up for California at this time**. Have csv for all U.S. Counties to upload after color by d3 is completed.  
     
+   # The data is being read in by this code in data.js
+    
+    ![](pics/csv.png)  
+    
+    # It show in the console  
+    
+    ![](pics/console.png)  
+    
+    # however, an error is printing that data is not a function on line 8 of main.js when a county is hovered on. I believe the problem is because it is csv, not json. Even though it is being printed on the console as objects. The main.js code would have to be reconfigured for csv... or figure out how to convert the csv to json. I was reading on jsonify and CSVToJSON. jsonify is more comprehesive to me. However, CSVToJSON code is a lot less. Requires dwonloading nodes(npm).  
+    
     This replacement for a data source in promising.Console.log(data) shows the data coming in as csv. However, there is a disconnect in the json conversion. Also, will have to tweak **main.js** code after this feed works. **Data will have to be filtered by 'state'** after it is filtered by 'date' and before it is filtered by 'county'.  
     
     ![](pics/data.png)
