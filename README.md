@@ -18,9 +18,9 @@
 - Get data (live feed would be perfered, however, found csv. [here](https://github.com/datasets/covid-19) and [here](https://github.com/nytimes/covid-19-data))
     - **note** current data is in *static\counties\static\js\data.js*. **Only set up for California at this time**. Have csv for all U.S. Counties to upload after color by d3 is completed.  
     
-    This replacement for a data source in promising. Need an error handling code for main.js to handle 'undefined' and 'null' values.  
+    This replacement for a data source in promising.Console.log(data) shows the data coming in as csv. However, there is a disconnect in the json conversion.  
     
-    ![](pics/datajs.png)
+    ![](pics/data.png)
 
   
 
