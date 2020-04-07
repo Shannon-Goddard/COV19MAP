@@ -18,11 +18,12 @@
 - Get data (live feed would be perfered, however, found csv. [here](https://github.com/datasets/covid-19) and [here](https://github.com/nytimes/covid-19-data))
     - **note** current data is in *static\counties\static\js\data.js*. **Only set up for California at this time**. Have csv for all U.S. Counties to upload after color by d3 is completed.  
     
-   # The data is being read in by this code in data.js (**example**. I have not pushed this to the repo)
+   # The data is being read in by this code in data.js  
+   ## **NOTE**. I have not pushed this to the repo
     
     ![](pics/csv.png)  
     
-    # It show in the console  
+    # It shows in the console  
     
     ![](pics/console.png)  
     
