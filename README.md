@@ -1,5 +1,4 @@
 Click [here](https://shannon-goddard.github.io/COV19MAP/) for Cov19 map demo  
-github is throwing errors. If you download the repo and lauch it, refresh the screen a couple of times. It does work lol
 
 ## Data  
 - data is being taken as csv format from https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv  
