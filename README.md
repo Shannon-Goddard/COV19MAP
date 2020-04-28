@@ -7,7 +7,9 @@ Click [here](https://shannon-goddard.github.io/COV19MAP/) for Cov19 map demo
 - the data can be updated by downloading the repo and running the python script. *There is a way in git actions to have it automatically do this for you.*
 
 ## To-do list  
-- Drop down box for user to select by date *currently showing totals for all dates combined*  
+### Drop-down box
+- Drop-down box for user to select by date *currently showing totals for all dates combined*  
 Would like for drop down box to be created by for-loop. **NOT HARD CODED**  
 That way the drop down menu will automatically add new dates as they are updated.  
+### Data
 - Get git actions to automatically update the data
