@@ -1,4 +1,4 @@
-Click [here](https://shannon-goddard.github.io/COV19MAP/) for demo  
+Click [here](https://shannon-goddard.github.io/COV19MAP/) for Cov19 map demo  
 
 ## Data  
 - data is being taken as csv format from [here](https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv)  
