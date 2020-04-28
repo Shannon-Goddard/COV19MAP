@@ -83,4 +83,14 @@ d3.json("https://raw.githubusercontent.com/Shannon-Goddard/data/master/data.json
     .attr("stroke-linejoin", "round")
     .attr("fill", "none");
   });
+  
+var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+if(ios) {
+  $('a').on('click touchend', function() {
+    var link = $(this).attr('href');
+    window.open(link,'_blank');
+    return false;
   });
+}
+});
