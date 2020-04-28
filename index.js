@@ -61,17 +61,17 @@ d3
     ) {
       return a !== b;
     });
-
+    
     var geojsonCounties = topojson.feature(data, data.objects.counties)
-      .features;
+    .features;
+    
+    for (var i = 0; i < cov19[0].length; i++) {
+      var state = cov19[0][i].state;
+      var cases = cov19[0][i].cases;
+      var deaths = cov19[0][i].deaths;
+      var countyFips = cov19[0][i].fips;
+      var county = cov19[0][i].area_name;
       
-      for (var i = 0; i < cov19[0].length; i++) {
-        var state = cov19[0][i].state;
-        var cases = cov19[0][i].cases;
-        var deaths = cov19[0][i].deaths;
-        var countyFips = cov19[0][i].fips;
-        var county = cov19[0][i].area_name;
-
       for (var j = 0; j < geojsonCounties.length; j++) {
         var countyId = geojsonCounties[j].id;
         if (countyFips == countyId) {
