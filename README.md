@@ -2,9 +2,9 @@ Click [here](https://shannon-goddard.github.io/COV19MAP/) for Cov19 map demo
 github is throwing errors. If you download the repo and lauch it, refresh the screen a couple of times. It does work lol
 
 ## Data  
-- data is being taken as csv format from [here](https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv)  
-- from there it is being converted to json format in the repo [here](https://github.com/Shannon-Goddard/data)
-- The cov19 map uses data from that repo [here](https://raw.githubusercontent.com/Shannon-Goddard/data/master/data.json)
+- data is being taken as csv format from https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv  
+- from there it is being converted to json format in the repo https://github.com/Shannon-Goddard/data
+- The cov19 map uses data from that repo https://raw.githubusercontent.com/Shannon-Goddard/data/master/data.json
 - the data can be updated by downloading the repo and running the python script. *There is a way in git actions to have it automatically do this for you.*
 
 ## To-do list  
