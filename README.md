@@ -1,5 +1,5 @@
 Click [here](https://shannon-goddard.github.io/COV19MAP/) for Cov19 map demo  
-![](https://share.getcloudapp.com/QwuK9Dle)
+![](/cov19gif.gif)
 
 ## Data  
 - data is being taken as csv format from https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv  
