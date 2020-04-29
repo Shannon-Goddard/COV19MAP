@@ -18,7 +18,7 @@ const cov19 = [];
 var svg = d3.select("#chart").append("svg").attr("width", chart_width).attr("height", chart_height);
 
 //fetch cov19 data and push into cov19 array, set color domain with min and max values of cov19 data
-d3.json("https://raw.githubusercontent.com/Shannon-Goddard/data/master/data.json").then(function(data) {
+d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv").then(function(data) {
   var min = d3.min(data, function(d) {
     return d.cases;
     });
@@ -27,7 +27,7 @@ d3.json("https://raw.githubusercontent.com/Shannon-Goddard/data/master/data.json
     });
     //last value of d3.range (below) is the step value and bin size.
     //anything less than min will be the first colour in d3.range, and anything above or equal to max will be the last color in d3.range
-    color.domain(d3.range(min, max, (max - min) / 1000));
+    color.domain(d3.range(min, max, (max - min) / 100));
     cov19.push(data);
   
   //get state/coutnties data to draw map
@@ -38,7 +38,7 @@ d3.json("https://raw.githubusercontent.com/Shannon-Goddard/data/master/data.json
       var cases = cov19[0][i].cases;
       var deaths = cov19[0][i].deaths;
       var countyFips = cov19[0][i].fips;
-      var county = cov19[0][i].area_name;
+      var county = cov19[0][i].county;
       
     for (var j = 0; j < geojsonCounties.length; j++) {
       var countyId = geojsonCounties[j].id;
