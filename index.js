@@ -27,7 +27,7 @@ d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counti
     });
     //last value of d3.range (below) is the step value and bin size.
     //anything less than min will be the first colour in d3.range, and anything above or equal to max will be the last color in d3.range
-    color.domain(d3.range(min, max, (max - min) / 100));
+    color.domain(d3.range(min, max, (max - min) / 10));
     cov19.push(data);
   
   //get state/coutnties data to draw map
@@ -66,7 +66,7 @@ d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counti
   .on("mouseover", function(d) {
       var coordinates = [];
       coordinates = d3.mouse(this);
-      d3.select("#tooltip").style("background-color", "rgb(255, 247, 188)").style("opacity", "0.8").style("left", coordinates[0] + 200 + "px").style("top", coordinates[1] - 30 + "px").style("display", "block").html(d.properties.value.state + " " + d.properties.value.county + " <br>" + d.properties.value.cases + " cases <br>" + " " + d.properties.value.deaths + " deaths " + " ");
+      d3.select("#tooltip").style("background-color", "rgb(255, 247, 188)").style("opacity", "0.8").style("left", coordinates[0] + 200 + "px").style("top", coordinates[1] + 100 + "px").style("display", "block").html(d.properties.value.state + " " + d.properties.value.county + " <br>" + d.properties.value.cases + " cases <br>" + " " + d.properties.value.deaths + " deaths " + " ");
     })
     
     .on("mouseout", function() {
