@@ -29,33 +29,17 @@ body {
 }
 
 h1 {
-    font-family: 'Goudy Old Style', sans-serif;
-    position: relative;
-    width: 100%;
-    max-width: 700vw;
-    font-weight: 700;
-    text-transform: lowercase;
-    line-height: -1vh;
-    letter-spacing: -1.25vw;
-    margin: 1vh;
-    color: #333;
-    text-align: center !important;
-    text-shadow: 4px 4px 4px rgb(44, 44, 44); 
-  }
+  width: 100%;
+  text-align: center !important;
+}
 
 p {
     font-family: 'Goudy Old Style';
     position: relative;
     text-transform: lowercase;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2vw;
     letter-spacing: .25vw;
-    color: #333;
+    color: rgb(102, 101, 101);
     text-align: center !important;  
-  }
-
-  
-h7 {
-  width: 100%;
-  text-align: center !important;
   }
