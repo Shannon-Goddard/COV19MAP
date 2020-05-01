@@ -4,28 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cov19 Map</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Goudy Old Style" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body style= "background: black">
-    <div class="jumbotron"  style= "background: black">
-        <h1 id="title">cov19 map</h1><br>
-        <p id="directions">select county for info</p><br>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 jumbotron"  style= "background: black">
+                <h1 id="title">cov19 map</h1><br>
+                <p id="directions">select county for info</p>
+            </div>
+        </div>
     <div id="chart"></div>
     <div id="tooltip"></div>
     <p id="info">*Map data is updated daily by https://github.com/nytimes/covid-19-data<br>
     *Grey colored counties have no records(undefined) or zero cases<br>
     <a href="https://github.com/Shannon-Goddard/COV19MAP" style="color: rgb(102, 101, 101);">Cov19Map Github</a>
     </p>
-
+    </div>
         <script src="https://d3js.org/d3.v5.js"></script>
         <script src="https://d3js.org/topojson.v2.min.js"></script>
 
