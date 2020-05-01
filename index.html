@@ -14,20 +14,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body style = "background: black">
-    <h1 style= "font-family: 'Goudy Old Style', sans-serif;
-    font-size: 15vw;
-    position: block;
-    font-weight: 700;
-    text-transform: lowercase;
-    line-height: -1vh;
-    letter-spacing: -1.25vw;
-    margin: 1vh;
-    color: #333;
-    text-shadow: 4px 4px 4px rgb(44, 44, 44);">cov19 map</h1>
+<body style= "background: black">
+    <h1 id="title">cov19 map</h1>
+    <p id="directions">select county for info</p>
     <div id="chart"></div>
     <div id="tooltip"></div>
-    <p class="small">*Map data is updated daily by https://github.com/nytimes/covid-19-data<br>
+    <p id="info">*Map data is updated daily by https://github.com/nytimes/covid-19-data<br>
     *Grey colored counties have no records(undefined) or zero cases<br>
     <a href="https://github.com/Shannon-Goddard/COV19MAP" style="color: rgb(102, 101, 101);">Cov19Map Github</a>
     </p>
