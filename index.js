@@ -27,7 +27,7 @@ d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counti
     });
     //last value of d3.range (below) is the step value and bin size.
     //anything less than min will be the first colour in d3.range, and anything above or equal to max will be the last color in d3.range
-    color.domain(d3.range(min, max, (max - min) / 8));
+    color.domain(d3.range(min, max, (max - min) / 16));
     cov19.push(data);
   
   //get state/coutnties data to draw map

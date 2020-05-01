@@ -34,6 +34,7 @@ h1 {
   margin: -120px auto;
   padding: 1.5%;
 }
+
 #title {
   font-family: 'Goudy Old Style', sans-serif;
   text-align: center !important;
@@ -51,13 +52,14 @@ h1 {
 #directions {
   font-family: 'Goudy Old Style', sans-serif;
   text-align: center !important;
-  font-size: 2.75vw;
+  font-size: 2.5vw;
   position: relative;
   font-weight: 500;
   text-transform: lowercase;
-  line-height: 18vh;
-  letter-spacing: 0.5vw;
+  line-height: 18.5vh;
+  letter-spacing: 1vw;
   margin: 10 0 0 0;
+  margin: -100px auto !important;
 }
 
 p {
