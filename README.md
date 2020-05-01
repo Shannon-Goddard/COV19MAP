@@ -13,12 +13,12 @@ In this module, we created a map to organize covid19 data that is stored as csv 
 
 ## Resources  
 - **Software:** VS Code, Jupyter Notebook   
-- **Languages:** HTML, CSS, JSON, JS  
+- **Languages:** HTML, CSS, JSON, JS, d3  
 - **Data Source:** [csv](https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv) *data is updated daily*    
 
 ## Objectives  
 - Import, analyze, transform a “real-world” classification dataset  
-- Create, populate, and dynamically filter a map using JavaScript, CSS, and HTML  
+- Create, populate, and dynamically filter a map using JavaScript, CSS, HTML, and d3  
 
 ## Summary  
 **Check-out this interactive map demo [here](https://shannon-goddard.github.io/COV19MAP/)**  
