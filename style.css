@@ -32,34 +32,20 @@ h1 {
   width: 100%;
   max-width: 2000px;
   margin: -120px auto;
-  padding: 1.5%;
+  color: #333;
+  text-shadow: 8px 8px 8px rgb(44, 44, 44);
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 #title {
-  font-family: 'Goudy Old Style', sans-serif;
-  text-align: center !important;
-  font-size: 15vw;
+  font-family: 'Goudy Old Style';
   position: relative;
-  font-weight: 700;
   text-transform: lowercase;
-  line-height: 18vh;
-  letter-spacing: -1.25vw;
-  margin: 0 0 0 0;
-  color: #333;
-  text-shadow: 4px 4px 4px rgb(44, 44, 44);
-}
-
-#directions {
-  font-family: 'Goudy Old Style', sans-serif;
+  font-weight: bold;
+  font-size: 30vmin;
+  letter-spacing: -1vw;
   text-align: center !important;
-  font-size: 2.5vw;
-  position: relative;
-  font-weight: 500;
-  text-transform: lowercase;
-  line-height: 18.5vh;
-  letter-spacing: 1vw;
-  margin: 10 10 10 10;
-  margin: -100px auto !important;
 }
 
 p {
@@ -78,5 +64,10 @@ p {
     font-size: small;
     letter-spacing: .25vw;
     text-align: center !important;  
+  }
+
+#info::first-line {
+    font-weight: bold !important;
+    font-size: large !important;
   }
 

@@ -1,5 +1,5 @@
 // Width and height
-var margin = { top: 10, right: 10, bottom: 10, left: 10 };
+var margin = { top: 20, right: 10, bottom: 10, left: 10 };
 var chart_width = 1000 - margin.left - margin.right;
 var chart_height = 700 - margin.top - margin.bottom;
 var color = d3.scaleThreshold().range(d3.schemeReds[9]);
