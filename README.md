@@ -14,7 +14,7 @@ In this module, we created a map to organize covid19 data that is stored as csv 
 ## Resources  
 - **Software:** VS Code, Jupyter Notebook   
 - **Languages:** HTML, CSS, JSON, JS  
-- **Data Source:** [https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv](https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv) *data is updated daily*    
+- **Data Source:** [csv](https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv) *data is updated daily*    
 
 ## Objectives  
 - Import, analyze, transform a “real-world” classification dataset  
