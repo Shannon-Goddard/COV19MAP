@@ -41,5 +41,5 @@ That way the drop down menu will automatically add new dates as they are updated
 Would like for a 2 second page load to improve user experience. **csv** being fetched is over 500,000 lines of data and building each day.Hoping drop-down box will help with this issue.  
 
 ### Style  
-- Page design | responsiveness 
+- Page design | responsiveness  
 Currently, page is responsive and more appealing to smaller screen sizes. Woud like to have more consistant viewing, regaurdless of screen size.
