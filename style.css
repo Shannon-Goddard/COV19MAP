@@ -2,12 +2,13 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 100%;
+}
+
 #chart{
-    width: 100%;
-    max-width: 1000px;
-    background-color: #000000;
-    margin: -120px auto;
-    padding: 10%;
+  background-color: #000000;
+  font-size: 0;
 }
 
 #tooltip {

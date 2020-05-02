@@ -1,7 +1,6 @@
 // Width and height
-var margin = { top: 20, right: 10, bottom: 10, left: 10 };
-var chart_width = 1000 - margin.left - margin.right;
-var chart_height = 700 - margin.top - margin.bottom;
+var chart_width = 900;
+var chart_height = 425;
 var color = d3.scaleThreshold().domain([100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]).range(d3.schemeReds[9]);
 
 //function to scale map
@@ -13,16 +12,15 @@ function scale(scaleFactor, width, height) {
   });
 }
 
-var path = d3.geoPath().projection(scale(0.8, chart_width, chart_height));
+var path = d3.geoPath().projection(scale(.565, chart_width, chart_height));
 const cov19 = [];
-var svg = d3.select("#chart").append("svg").attr("width", chart_width).attr("height", chart_height);
+var svg = d3.select("#chart").append('svg')
+.attr("preserveAspectRatio", "xMidYMid")
+.attr("viewBox", "0 0 " + chart_width + " " + chart_height);
 
 //fetch cov19 data and push into cov19 array, set color domain with min and max values of cov19 data
 d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv").then(function(data) {
-  var min = 0 ;
-    var max = d3.max(data, function(d) {
-      return d.cases;
-    });
+
     //last value of d3.range (below) is the step value and bin size.
     //anything less than min will be the first colour in d3.range, and anything above or equal to max will be the last color in d3.range
     color.domain([100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000])(d3.range(d3.schemeReds[9]));
