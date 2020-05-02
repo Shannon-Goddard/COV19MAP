@@ -7,7 +7,7 @@ body {
     max-width: 1000px;
     background-color: #000000;
     margin: -120px auto;
-    padding: 1.5%;
+    padding: 10%;
 }
 
 #tooltip {
@@ -27,47 +27,3 @@ body {
   font-weight: bold !important;
   font-size: 2.3vw !important;
 }
-
-h1 {
-  width: 100%;
-  max-width: 2000px;
-  margin: -120px auto;
-  color: #333;
-  text-shadow: 8px 8px 8px rgb(44, 44, 44);
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-#title {
-  font-family: 'Goudy Old Style';
-  position: relative;
-  text-transform: lowercase;
-  font-weight: bold;
-  font-size: 30vmin;
-  letter-spacing: -1vw;
-  text-align: center !important;
-}
-
-p {
-  width: 100%;
-  max-width: 1000px;
-  margin: -120px auto;
-  padding: 1.5%;
-  color: rgb(102, 101, 101);  
-  }
-
-#info {
-    font-family: 'Goudy Old Style';
-    position: relative;
-    text-transform: lowercase;
-    font-weight: bold;
-    font-size: small;
-    letter-spacing: .25vw;
-    text-align: center !important;  
-  }
-
-#info::first-line {
-    font-weight: bold !important;
-    font-size: large !important;
-  }
-
