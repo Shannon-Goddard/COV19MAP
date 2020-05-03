@@ -79,3 +79,85 @@ p {
     font-weight: bold !important;
     font-size: medium !important;
   }
+
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url('cov19pic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+  width: 100%;
+}
+
+#chart{
+  position: relative;
+  top: 1%;
+  width: 100%;
+  height: 100%;
+}
+
+#alert {
+    position: sticky;
+    width: 100%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 1%;
+    pointer-events: none;
+    display: none;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+  }
+
+#alert::first-line {
+  font-weight: bold !important;
+  font-size: 2.3vw !important;
+}
+
+h1 {
+  color: rgb(43, 42, 42);
+  text-shadow: 4px 4px 4px black;
+}
+
+#title {
+  font-family: 'Goudy Old Style';
+  position: fixed;
+  top: 3vmin;
+  right: 3vmin;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 10vmax;
+  letter-spacing: -1vw;
+  z-index: 1;
+}
+
+p {
+  color: rgb(122, 121, 121);
+  }
+
+#info {
+    font-family: 'Goudy Old Style';
+    position: fixed;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: .25vw;
+    text-align: center !important;
+    right: 0vmin !important;
+    bottom: 0vmin !important;
+    text-shadow: 4px 4px 4px black !important;
+  }
+
+#info::first-line {
+    font-weight: bold !important;
+    font-size: medium !important;
+  }

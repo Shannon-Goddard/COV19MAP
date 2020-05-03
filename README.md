@@ -23,7 +23,7 @@ In this module, we created a map to organize covid19 data that is stored as csv 
 ## Summary  
 **Check-out this interactive map demo [here](https://shannon-goddard.github.io/COV19MAP/)**  
 
-![](/cov19gif.gif)  
+![](/cov19.gif)  
 
 To improve load time, this map is, also, published on **AWS | Check-out it out:**
 - [cov19map](http://cov19bucket.s3-website.us-east-2.amazonaws.com/)  
