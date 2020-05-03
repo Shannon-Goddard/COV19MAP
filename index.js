@@ -1,7 +1,7 @@
 // Width and height
-var chart_width = 900;
-var chart_height = 425;
-var color = d3.scaleThreshold().domain([100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]).range(d3.schemeReds[9]);
+var width = 900;
+var height = 500;
+var color = d3.scaleThreshold().domain([100, 500, 1000, 2500, 5000, 10000, 20000, 30000]).range(d3.schemeReds[9]);
 
 //function to scale map
 function scale(scaleFactor, width, height) {
@@ -12,18 +12,18 @@ function scale(scaleFactor, width, height) {
   });
 }
 
-var path = d3.geoPath().projection(scale(.565, chart_width, chart_height));
+var path = d3.geoPath().projection(scale(.6, width, height));
 const cov19 = [];
 var svg = d3.select("#chart").append('svg')
 .attr("preserveAspectRatio", "xMidYMid")
-.attr("viewBox", "0 0 " + chart_width + " " + chart_height);
+.attr("viewBox", "0 0 " + width + " " + height);
 
 //fetch cov19 data and push into cov19 array, set color domain with min and max values of cov19 data
 d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv").then(function(data) {
 
     //last value of d3.range (below) is the step value and bin size.
     //anything less than min will be the first colour in d3.range, and anything above or equal to max will be the last color in d3.range
-    color.domain([100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000])(d3.range(d3.schemeReds[9]));
+    color.domain([100, 500, 1000, 2500, 5000, 10000, 20000, 30000])(d3.range(d3.schemeReds[9]));
     cov19.push(data);
   
   //get state/coutnties data to draw map
@@ -75,9 +75,20 @@ d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counti
     }))
     .attr("d", path)
     .attr("margin", 1)
-    .attr("stroke", "black")
+    .attr("stroke", "rgb(43, 42, 42)")
     .attr("stroke-linejoin", "round")
     .attr("fill", "none");
-  });
+ 
 
+      //counties boudary stroke
+      svg.append("path").datum(topojson.mesh(data, data.objects.counties, function(a, b) {
+        return a !== b;
+      }))
+      .attr("d", path)
+      .attr("margin", 1)
+      .attr("stroke-width", .25)
+      .attr("stroke", "rgb(43, 42, 42)")
+      .attr("stroke-linejoin", "round")
+      .attr("fill", "none");
+    });
 });
