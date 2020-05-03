@@ -38,7 +38,7 @@ body {
 #alert::first-line {
   font-weight: bold !important;
   font-size: 2.3vw !important;
-  text-align: center;
+  text-align: center !important;
 }
 
 h1 {
