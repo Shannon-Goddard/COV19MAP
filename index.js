@@ -62,11 +62,11 @@ d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counti
   .on("mouseover", function(d) {
       var coordinates = [];
       coordinates = d3.mouse(this);
-      d3.select("#tooltip").style("background-color", "rgb(255, 247, 188)").style("opacity", "0.8").style("left", coordinates[0]  + "px").style("top", coordinates[1]  + "px").style("display", "block").html(d.properties.value.state + " " + d.properties.value.county + " <br>" + d.properties.value.cases + " cases <br>" + " " + d.properties.value.deaths + " deaths " + " ");
+      d3.select("#alert").style("background-color", "rgb(255, 247, 188)").style("opacity", "0.8").style("left", "0px").style("top", "0px").style("display", "block").html(d.properties.value.state + " " + d.properties.value.county + " <br>" + d.properties.value.cases + " cases <br>" + " " + d.properties.value.deaths + " deaths " + " ");
     })
     
     .on("mouseout", function() {
-      d3.select("#tooltip").style("display", "none");
+      d3.select("#alert").style("display", "none");
     });
     
     //state boudary stroke
