@@ -35,7 +35,7 @@ The map uses live data from The New York Times COVID-19 dataset, which includes:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/COV19MAP.git
+git clone [https://github.com/Shannon-Goddard/COV19MAP](https://github.com/Shannon-Goddard/COV19MAP)
 ```
 
 2. Open `index.html` in your browser or serve with a local server:
